@@ -14,28 +14,42 @@
     
     <div>
         <input style='font-size: 35px;' disabled="true" id="result"><br>
-        <button class="button number">1</button><!--
+        <button class="button operator">(</button><!--
+        --><button class="button number">1</button><!--
         --><button class="button number">2</button><!--
         --><button class="button number">3</button><!--
         --><button class="button operator">+</button><!--
         --><br>
-        <button class="button number">4</button><!--
+        <button class="button operator">)</button><!--
+        --><button class="button number">4</button><!--
         --><button class="button number">5</button><!--
         --><button class="button number">6</button><!--
         --><button class="button operator">-</button><!--
         --><br>
-        <button class="button number">7</button><!-- 
-        --><button class="button number">8</button><!-- 
-        --><button class="button number">9</button><!--
-        --><button class="button operator">*</button><!--
+        <!--
+        --><button id="equal" style="height: 200px;">=</button><!--
+        --><button class="button number" style="position: relative;bottom: 50px;">7</button><!-- 
+        --><button class="button number" style="position: relative;bottom: 50px;" >8</button><!-- 
+        --><button class="button number" style="position: relative;bottom: 50px;">9</button><!--
+        --><button class="button operator" style="position: relative;bottom: 50px;">*</button><!--
         --><br> 
-        <button id="equal" >=</button><!--
-        --><button id="clear" >C</button><button id="back"><=</button><!--
-        --><button class="button operator">/</button><!--
+        <button class="button operator" style="margin-left: 100px; position: relative;bottom: 100px;">.</button><!--
+        --><button class="button number"style="position: relative; top: -100px;">0</button><button style="position: relative; bottom: 100px;" id="back"><=</button><!--
+        --><button class="button operator" style="position: relative; bottom: 100px;">/</button><!--
         --><br>
+           <button id="clear" style="position: relative; left: 200px; bottom: 100px;">C</button>
         
     </div>
-    
+    <div style="width: 200px;"></div>    
+    <div id="historyContainer">
+    <h2>History:</h2>
+    <ol>
+        <li id="history"></li>
+        <li id="history1"></li>
+        <li id="history2"></li>
+        <li id="history3"></li>
+    </ol>
+    </div>
 </body>
 <style>
     body{
