@@ -1,7 +1,9 @@
 body{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     font-size: 35px;
+    margin: 50px;
 }
 button{
     margin: 0px;
@@ -10,6 +12,9 @@ button{
     width: 100px;
     height: 100px;
 }
+button:focus{
+    outline:none !important;
+    }
 .number{
     background-color: #f1f3f4;
 }
@@ -18,7 +23,7 @@ button{
 }
 input{
     margin: 0px;
-    width: 392px;
+    width: 492px;
     height: 70px;
 }
 .operator{
@@ -52,4 +57,12 @@ input{
 .input{
     transition: 0.5s;
     background-color: #f1f3f4; ;
+}
+.historyContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px;
+    position: relative;
+    left: 100px;
 }
